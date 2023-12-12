@@ -5,7 +5,7 @@
 const parolaInserita = prompt('Inserisci una parola');
 console.log('parolaInserita', parolaInserita, typeof parolaInserita)
 
-const parolaPalindroma = palindroma(parolaInserita);
+const parolaPalindroma = reverse(parolaInserita);
 console.log('parolaPalindroma', parolaPalindroma, typeof parolaPalindroma)
 
 
@@ -18,7 +18,7 @@ else{
 
 
 
-function palindroma(parola) {
+function reverse(parola) {
     let  parolaReverse = ('');
     for (let i = parola.length -1; i >= 0; i--){
         parolaReverse += parola[i];    
