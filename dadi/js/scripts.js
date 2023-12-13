@@ -17,17 +17,29 @@ console.log('numeroComputer',numeroComputer , typeof numeroComputer)
 const sommaNumeri = numeroGiocatore + numeroComputer;
 console.log('sommaNumeri',sommaNumeri , typeof sommaNumeri)
 
+const even = isEven(sommaNumeri);
+console.log('even',even , typeof even)
 
 
-if (scelta == 'pari' && isEven(sommaNumeri) == true) {
+if(even && scelta == 'pari'){
     alert('Hai vinto');
 }
-else if (scelta == 'dispari' && isEven(sommaNumeri) == false) {
+else if(!even && scelta =='dispari'){
     alert('Hai vinto');
 }
 else{
     alert('Hai perso');
 }
+
+// if (scelta == 'pari' && isEven(sommaNumeri) == true) {
+//     alert('Hai vinto');
+// }
+// else if (scelta == 'dispari' && isEven(sommaNumeri) == false) {
+//     alert('Hai vinto');
+// }
+// else{
+//     alert('Hai perso');
+// }
 
 
 
